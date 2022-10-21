@@ -1,9 +1,9 @@
 const readline = require("readline-sync");
 
-// EX 01-04
-const userName = readline.question("Aapka kya naam hai? \nHumse kya kaam hai? \n");
+// EX 05
+const age = readline.question("What's your Age? (sry girls I need it for an assignment)\n")
 
-let userNameArray = userName.split(" ");
-
-console.log("KBC mein aapka swagat hai " + userNameArray[0] +
- "! \nTanay Bhaiya jald hi aapko " + userNameArray[4] + " sikha denge :D");
+if(age > 18 && age <= 60) console.log("You're a grown-ass man/woman!");
+else if(age < 10) console.log("Go out and play, kid");
+else if(age > 60) console.log("What ya doing here Old Man?");
+else console.log("So you're a teenager, an unsolicited advice, please don't such take actions which may make you regret for the rest of your life, enjoy but be careful, you have a long way to go!")
